@@ -42,8 +42,8 @@ img {
 }
 
 /************************************************
-    UTILITIES
- ************************************************/
+     UTILITIES
+  ************************************************/
 
 /* LAYOUT */
 .container {
@@ -67,8 +67,8 @@ img {
 }
 
 /************************************************
-    SITE SECTIONS
- ************************************************/
+     SITE SECTIONS
+  ************************************************/
 
 /* HEADER */
 .site-header {
@@ -111,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -124,6 +125,61 @@ img {
     margin-bottom: 2.5rem;
 }
 
-/************************************************
-    SOLUZIONE RESPONSIVE
- ************************************************/
+
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .steps {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .steps .col {
+        padding: 2rem;
+    }
+
+    .steps h2 {
+        margin: 0;
+        padding-top: 2rem;
+    }
+
+    .lessons .col,
+    .steps .col,
+    .why-us .col-right .why-us .col-left {
+        width: 100%;
+    }
+
+    .why-us {
+        background-color: rgb(34, 34, 34);
+        margin: 0;
+        padding: 3rem 0;
+    }
+
+    .why-us .col-left {
+        padding-bottom: 3rem;
+    }
+
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+}
+
+/* FIX LAYOUT */
+@media screen and (min-width: 769px) and (max-width: 1160px) {
+
+    .container {
+        width: 100%;
+    }
+
+}
